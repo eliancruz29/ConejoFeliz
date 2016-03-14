@@ -3,11 +3,11 @@ D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\
 D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\com\enhance\gameservice\IGameTuningService$Stub$Proxy.class \
 D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\com\enhance\gameservice\IGameTuningService$Stub.class \
 D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\com\enhance\gameservice\IGameTuningService.class \
-D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\ConojoFeliz\BuildConfig.class \
-D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\ConojoFeliz\R$attr.class \
-D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\ConojoFeliz\R$drawable.class \
-D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\ConojoFeliz\R$string.class \
-D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\ConojoFeliz\R.class \
+D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\ConejoFeliz\BuildConfig.class \
+D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\ConejoFeliz\R$attr.class \
+D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\ConejoFeliz\R$drawable.class \
+D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\ConejoFeliz\R$string.class \
+D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\ConejoFeliz\R.class \
 D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\javascript\AppActivity.class \
 D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\lib\Cocos2dxAccelerometer.class \
 D:\Cocos_Games\GITS\ConejoFeliz\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\lib\Cocos2dxActivity$1.class \

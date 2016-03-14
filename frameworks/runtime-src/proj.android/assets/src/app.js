@@ -1,5 +1,5 @@
 
-var HelloWorldLayer = cc.Layer.extend({
+var ConejoFelizLayer = cc.Layer.extend({
     sprFondo: null,
     sprConejo: null,
     actionConejo: null,
@@ -32,6 +32,7 @@ var HelloWorldLayer = cc.Layer.extend({
                 
             }
         }
+        
         return false;
     },
     ctor: function () {
@@ -59,10 +60,10 @@ var HelloWorldLayer = cc.Layer.extend({
     }
 });
 
-var HelloWorldScene = cc.Scene.extend({
+var ConejoFelizScene = cc.Scene.extend({
     onEnter: function () {
         this._super();
-        var layer = new HelloWorldLayer();
+        var layer = new ConejoFelizLayer();
         this.addChild(layer);
     }
 });

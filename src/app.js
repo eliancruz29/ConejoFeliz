@@ -1,5 +1,5 @@
 
-var HelloWorldLayer = cc.Layer.extend({
+var ConejoFelizLayer = cc.Layer.extend({
     sprFondo: null,
     sprConejo: null,
     actionConejo: null,
@@ -39,6 +39,7 @@ var HelloWorldLayer = cc.Layer.extend({
         this._super();
         //Obteniendo el tamaño de la pantalla
         var size = cc.winSize;
+        cc.log(size)
 
         //posicionando la imagen de fondo
         this.sprFondo = new cc.Sprite(res.fondo_png);
@@ -60,10 +61,10 @@ var HelloWorldLayer = cc.Layer.extend({
     }
 });
 
-var HelloWorldScene = cc.Scene.extend({
+var ConejoFelizScene = cc.Scene.extend({
     onEnter: function () {
         this._super();
-        var layer = new HelloWorldLayer();
+        var layer = new ConejoFelizLayer();
         this.addChild(layer);
     }
 });

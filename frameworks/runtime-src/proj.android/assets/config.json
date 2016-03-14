@@ -1,8 +1,8 @@
 {
   "init_cfg": {
-    "isLandscape": true,
-    "isWindowTop": false,
-    "name": "NewCocosProject2",
+    "isLandscape": false,
+    "isWindowTop": true,
+    "name": "ConejoFeliz",
     "width": 960,
     "height": 640,
     "entry": "main.js",
@@ -37,9 +37,9 @@
       "height": 1536
     },
     {
-      "title": "Android (800x480)",
-      "width": 800,
-      "height": 480
+      "title": "Android (960x640)",
+      "width": 960,
+      "height": 640
     },
     {
       "title": "Android (854x480)",

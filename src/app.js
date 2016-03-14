@@ -15,7 +15,7 @@ var HelloWorldLayer = cc.Layer.extend({
         var conejo = target.sprConejo;
         
         if(cc.rectContainsPoint(fondo, posInScreen)){
-            cc.log((target.actionConejo === null));
+            //cc.log((target.actionConejo === null));
             
             if(!target.actionConejo || target.actionConejo.isDone()){
                 
@@ -30,10 +30,10 @@ var HelloWorldLayer = cc.Layer.extend({
                 var moveto = cc.moveTo(target.setVelocity(diff), pos, conejo.y);
                 target.actionConejo = conejo.runAction(moveto);
                 
-            }else{
-                cc.log("Esta corriendo.");
             }
         }
+        
+        return false;
     },
     ctor: function () {
         this._super();

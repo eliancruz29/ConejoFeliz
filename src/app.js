@@ -74,6 +74,8 @@ var ConejoFelizLayer = cc.Layer.extend({
         moveto.setTag(100);
         conejo.runAction(moveto);
         
+        
+        
         return true;
     },
     

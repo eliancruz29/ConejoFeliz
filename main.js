@@ -60,13 +60,74 @@ cc.game.onStart = function(){
     cc.view.enableRetina(cc.sys.os === cc.sys.OS_IOS ? true : false);
     // Adjust viewport meta
     cc.view.adjustViewPort(true);
-    // Setup the resolution policy and design resolution size
-    cc.view.setDesignResolutionSize(960, 640, cc.ResolutionPolicy.SHOW_ALL);
-    // Instead of set design resolution, you can also set the real pixel resolution size
-    // Uncomment the following line and delete the previous line.
-    // cc.view.setRealPixelResolution(960, 640, cc.ResolutionPolicy.SHOW_ALL);
-    // The game will be resized when browser size change
-    cc.view.resizeWithBrowserSize(true);
+    
+    var isLandscape = false;
+    
+    if (cc.sys.isNative) {
+        
+        var searchPaths = jsb.fileUtils.getSearchPaths();
+        
+        // ipad retina
+        if (cc.view.getFrameSize().width >= 1536 && cc.view.getFrameSize().height >= 1536){
+            
+            if (true == isLandscape){
+                cc.view.setDesingResolutionSize(2048, 1536, cc.ResolutionPolicy.SHOW_ALL);
+            }else{
+                cc.view.setDesingResolutionSize(1536, 2048, cc.ResolutionPolicy.SHOW_ALL);
+            }
+            
+            searchPaths.push("res/drawable-hdpi/");
+            searchPaths.push("src");
+            
+        } else if (cc.view.getFrameSize().width >= 1280 && cc.view.getFrameSize().height >= 1280) {
+            
+            // android medium res screen
+            
+            if (true == isLandscape){
+                cc.view.setDesingResolutionSize(1280, 720, cc.ResolutionPolicy.SHOW_ALL);
+            }else{
+                cc.view.setDesingResolutionSize(720, 1280, cc.ResolutionPolicy.SHOW_ALL);
+            }
+            
+            searchPaths.push("res/drawable-mdpi/");
+            searchPaths.push("src");
+            
+        } else {
+            
+            var size;
+            
+            if (cc.view.getFrameSize().width >= 854 || cc.view.getFrameSize().height >= 854){
+                size = 854;
+            } else {
+                size = 800;
+            }
+            
+            if (true == isLandscape){
+                cc.view.setDesignResolutionSize(size, 480, cc.ResolutionPolicy.SHOW_ALL);
+            } else {
+                cc.view.setDesignResolutionSize(480, size, cc.ResolutionPolicy.SHOW_ALL);
+            }
+        
+            searchPaths.push("res/drawable-ldpi/");
+            searchPaths.push("src");    
+        }
+        
+        jsb.fileUtils.setSearchPaths(searchPaths);
+        
+    } else {
+        if (true == isLandscape){
+            cc.view.setDesignResolutionSize(960, 640, cc.ResolutionPolicy.SHOW_ALL);
+        } else {
+            cc.view.setDesignResolutionSize(640, 960, cc.ResolutionPolicy.SHOW_ALL);
+        }
+        
+        // Instead of set design resolution, you can also set the real pixel resolution size
+        // Uncomment the following line and delete the previous line.
+        // cc.view.setRealPixelResolution(960, 640, cc.ResolutionPolicy.SHOW_ALL);
+        // The game will be resized when browser size change
+        cc.view.resizeWithBrowserSize(true);
+    }
+    
     //load resources
     cc.LoaderScene.preload(g_resources, function () {
         cc.director.runScene(new ConejoFelizScene());
